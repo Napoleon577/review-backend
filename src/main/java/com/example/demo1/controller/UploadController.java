@@ -32,10 +32,8 @@ public class UploadController {
             if (!directory.exists()) {
                 directory.mkdirs();
             }
-            //jaojgloajglja
             // 定义保存文件的完整路径
             String savePath = localDir + uniqueFileName;
-            String savePath1 = localDir + uniqueFileName;
             // 保存文件
             file.transferTo(new File(savePath));
             // 构建本地文件的URL
